@@ -1,0 +1,453 @@
+<!DOCTYPE html>
+
+<!--
+ // WEBSITE: https://themefisher.com
+ // TWITTER: https://twitter.com/themefisher
+ // FACEBOOK: https://www.facebook.com/themefisher
+ // GITHUB: https://github.com/themefisher/
+-->
+
+<html lang="en-us">
+
+<head>
+	<meta charset="utf-8">
+	<title>Wallet - Payday Loan Service Template</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=5">
+	<meta name="description" content="This is meta description">
+	<meta name="author" content="Themefisher">
+	<link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+	<link rel="icon" href="images/favicon.png" type="image/x-icon">
+
+	<!-- # Google Fonts -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;700&display=swap" rel="stylesheet">
+
+	<!-- # CSS Plugins -->
+	<link rel="stylesheet" href="plugins/slick/slick.css">
+	<link rel="stylesheet" href="plugins/font-awesome/fontawesome.min.css">
+	<link rel="stylesheet" href="plugins/font-awesome/brands.css">
+	<link rel="stylesheet" href="plugins/font-awesome/solid.css">
+
+	<!-- # Main Style Sheet -->
+	<link rel="stylesheet" href="css/style.css">
+	<style>
+        /* * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        } */
+
+        .cont2 {
+            background: linear-gradient(135deg, #671cf4, #671cf4);
+            color: white;
+            text-align: center;
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        .logo {
+            font-size: 32px;
+            font-weight: bold;
+            margin-bottom: 20px;
+        }
+
+        .construction-icon {
+            font-size: 60px;
+            margin-bottom: 10px;
+        }
+
+        h1 {
+            font-size: 40px;
+            margin-bottom: 10px;
+            text-transform: uppercase;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            opacity: 0.8;
+        }
+
+        .loader {
+            width: 50px;
+            height: 50px;
+            border: 5px solid rgba(255, 255, 255, 0.3);
+            border-radius: 50%;
+            border-top-color: #fff;
+            animation: spin 1s linear infinite;
+            margin-bottom: 20px;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .social-icons a {
+            display: inline-block;
+            margin: 10px;
+            text-decoration: none;
+            color: white;
+            font-size: 24px;
+            transition: transform 0.3s;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .contact {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .contact a {
+            color: #ffcc00;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .contact a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+
+<!-- navigation -->
+<header class="navigation bg-tertiary">
+	<nav class="navbar navbar-expand-xl navbar-light text-center py-3">
+		<div class="container">
+			<a class="navbar-brand" href="index.html">
+				Yobyte
+				<!-- <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Wallet"> -->
+			</a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav mx-auto mb-2 mb-lg-0">
+					<li class="nav-item"> <a class="nav-link" href="index.html">Home</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="about.html">About</a>
+					</li>
+					<!-- <li class="nav-item "> <a class="nav-link" href="how-it-works.html">How It Works</a> -->
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="services.html">Services</a>
+					</li>
+					<li class="nav-item "> <a class="nav-link" href="contact.html">Contact</a>
+					</li>
+					<!-- <li class="nav-item dropdown"> <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
+						<ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+							<li><a class="dropdown-item " href="blog.html">Blog</a>
+							</li>
+							<li><a class="dropdown-item " href="blog-details.html">Blog Details</a>
+							</li>
+							<li><a class="dropdown-item " href="service-details.html">Service Details</a>
+							</li>
+							<li><a class="dropdown-item " href="faq.html">FAQ&#39;s</a>
+							</li>
+							<li><a class="dropdown-item " href="legal.html">Legal</a>
+							</li>
+							<li><a class="dropdown-item " href="terms.html">Terms &amp; Condition</a>
+							</li>
+							<li><a class="dropdown-item " href="privacy-policy.html">Privacy &amp; Policy</a>
+							</li>
+						</ul>
+					</li> -->
+				</ul>
+				<!-- account btn --> <a href="#!" class="btn btn-outline-primary" hidden>Log In</a>
+				<!-- account btn --> <a href="#!" class="btn btn-primary ms-2 ms-lg-3" hidden>Sign Up</a>
+			</div>
+		</div>
+	</nav>
+</header>
+<!-- /navigation -->
+
+<div class="modal applyLoanModal fade" id="applyLoan" tabindex="-1" aria-labelledby="applyLoanLabel" aria-hidden="true">
+  <div class="modal-dialog modal-dialog-centered">
+    <div class="modal-content">
+      <div class="modal-header border-bottom-0">
+        <h4 class="modal-title" id="exampleModalLabel">How much do you need?</h4>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form action="#!" method="post">
+          <div class="row">
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_amount" class="form-label">Amount</label>
+                <input type="number" class="form-control shadow-none" id="loan_amount" placeholder="ex: 25000">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_how_long_for" class="form-label">How long for?</label>
+                <input type="number" class="form-control shadow-none" id="loan_how_long_for" placeholder="ex: 12">
+              </div>
+            </div>
+            <div class="col-lg-12 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_repayment" class="form-label">Repayment</label>
+                <input type="number" class="form-control shadow-none" id="loan_repayment" disabled>
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_full_name" class="form-label">Full Name</label>
+                <input type="text" class="form-control shadow-none" id="loan_full_name">
+              </div>
+            </div>
+            <div class="col-lg-6 mb-4 pb-2">
+              <div class="form-group">
+                <label for="loan_email_address" class="form-label">Email address</label>
+                <input type="email" class="form-control shadow-none" id="loan_email_address">
+              </div>
+            </div>
+            <div class="col-lg-12">
+              <button type="submit" class="btn btn-primary w-100">Get Your Loan Now</button>
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<section class="section-sm">
+	<div class="container cont2">
+		<div class="logo">🚀 Yobyte Digital</div>
+
+    <div class="construction-icon">🚧</div>
+
+    <h1>Launching Soon</h1>
+    <p>Our website is under construction, but we’re working hard to bring you an amazing experience.</p>
+
+    <div class="loader"></div>
+
+    <div class="social-icons">
+        <a href="#" target="_blank">🔵 </a>
+        <a href="#" target="_blank">🟣 </a>
+        <a href="#" target="_blank">🔗 </a>
+        <a href="#" target="_blank">🐦 </a>
+    </div>
+
+    <div class="contact">
+        Have a project in mind? <a href="mailto:contact@yobyte.com">Email us</a> today!
+    </div>
+		<!-- <div class="row g-5"> -->
+			<!-- <div class="col-lg-4 mb-5 mb-lg-0">
+				<div class="bg-white shadow rounded-lg p-4 sticky-top" style="top: 30px;">
+					<h4 class="has-line-end">SEO Optimization</h4>
+					<nav id="TableOfContents">
+						<ul>
+							<li><a href="#seo-optimization">What is SEO Optimization?</a></li>
+							<li><a href="#how-we-improve-seo">How We Improve SEO</a></li>
+							<li><a href="#how-we-differ">How We Differ from Others</a></li>
+						</ul>
+					</nav>
+				</div>
+			</div>
+			<div class="col-lg-8">
+				<div class="content">
+					<h2 id="seo-optimization">What is SEO Optimization?</h2>
+					<p>SEO (Search Engine Optimization) is the key to driving **organic traffic** to your website and increasing visibility on search engines like **Google, Bing, and Yahoo**. A well-optimized website ranks higher in search results, making it easier for potential customers to find you.</p>
+					<p>At Yobyte, we implement **proven SEO strategies** that help businesses improve their **search rankings, website traffic, and conversion rates**. Our SEO optimization covers:</p>
+					<ul>
+						<li><strong>Keyword Research & Targeting:</strong> Identifying high-performing keywords for your niche.</li>
+						<li><strong>On-Page SEO:</strong> Optimizing website content, meta tags, and internal linking.</li>
+						<li><strong>Technical SEO:</strong> Improving site speed, mobile-friendliness, and structured data.</li>
+						<li><strong>Off-Page SEO:</strong> Building high-quality backlinks and social signals.</li>
+						<li><strong>Content Strategy:</strong> Creating high-value content that attracts and engages users.</li>
+						<li><strong>Local SEO:</strong> Optimizing your business for **Google My Business** and local search.</li>
+					</ul>
+		
+					<h2 id="how-we-improve-seo">How We Improve SEO</h2>
+					<p>Our **SEO process** is designed to deliver **sustainable growth and long-term results**. Here's how we ensure your website ranks higher:</p>
+		
+					<h3>🔍 1. In-Depth SEO Audit</h3>
+					<p>We perform a **comprehensive website audit** to analyze current SEO performance, identify technical issues, and uncover opportunities for improvement.</p>
+		
+					<h3>📌 2. Keyword Research & Strategy</h3>
+					<p>We use **advanced keyword research tools** to identify the most relevant and high-converting keywords for your industry. Our strategy focuses on **long-tail keywords** that bring in highly targeted traffic.</p>
+		
+					<h3>📄 3. On-Page Optimization</h3>
+					<p>We optimize every page on your website by improving:</p>
+					<ul>
+						<li>**Title Tags & Meta Descriptions** – Ensuring they are keyword-rich and engaging.</li>
+						<li>**Header Tags (H1, H2, H3, etc.)** – Structuring content for better readability and search ranking.</li>
+						<li>**URL Optimization** – Creating SEO-friendly, easy-to-read URLs.</li>
+						<li>**Image Optimization** – Using proper alt tags and compressed images for faster loading.</li>
+						<li>**Internal Linking Strategy** – Enhancing navigation and page authority.</li>
+					</ul>
+		
+					<h3>⚙️ 4. Technical SEO Enhancements</h3>
+					<p>Our team ensures your website is technically sound by:</p>
+					<ul>
+						<li>**Boosting Page Speed:** Optimizing images, code, and caching to improve loading times.</li>
+						<li>**Making Your Site Mobile-Friendly:** Enhancing responsiveness for all devices.</li>
+						<li>**Implementing Schema Markup:** Helping search engines understand your content better.</li>
+						<li>**Fixing Broken Links & Redirects:** Ensuring smooth navigation for users and crawlers.</li>
+					</ul>
+		
+					<h3>🔗 5. Off-Page SEO & Link Building</h3>
+					<p>Backlinks are crucial for improving domain authority. We focus on:</p>
+					<ul>
+						<li>**Earning High-Quality Backlinks** – Acquiring links from reputable websites.</li>
+						<li>**Guest Blogging & Outreach** – Contributing valuable content to industry-relevant blogs.</li>
+						<li>**Social Media Signals** – Enhancing brand authority through social engagement.</li>
+					</ul>
+		
+					<h3>📍 6. Local SEO for Business Growth</h3>
+					<p>If you run a **local business**, we optimize your **Google My Business** profile and improve **local citations** to boost rankings in **Google Maps** and local search results.</p>
+		
+					<h3>📊 7. SEO Performance Tracking & Reporting</h3>
+					<p>SEO is an ongoing process. We **continuously monitor** your SEO performance with **analytics tools** and provide **detailed reports** to track improvements, traffic growth, and ROI.</p>
+		
+					<hr>
+		
+					<h2 id="how-we-differ">How We Differ from Others</h2>
+					<p>At Yobyte, we take a **unique approach to SEO and digital marketing**, making us stand out from the competition:</p>
+		
+					<h3>✔️ 1. Data-Driven SEO Strategies</h3>
+					<p>Unlike other agencies that rely on **guesswork**, we use **AI-powered tools, in-depth data analysis, and real-time performance tracking** to ensure maximum results.</p>
+		
+					<h3>✔️ 2. Personalized SEO Plans</h3>
+					<p>We don’t believe in **one-size-fits-all** SEO solutions. Every business is unique, and we **customize SEO strategies** based on your **industry, competition, and goals**.</p>
+		
+					<h3>✔️ 3. White-Hat SEO Practices</h3>
+					<p>We follow **Google’s best practices** and **ethical SEO techniques**, avoiding black-hat tactics that could harm your rankings in the long run.</p>
+		
+					<h3>✔️ 4. Full Transparency & Real-Time Reporting</h3>
+					<p>We provide **detailed SEO reports**, allowing you to track progress, rankings, and campaign performance. No hidden fees, no empty promises—only measurable results.</p>
+		
+					<h3>✔️ 5. Expert Team with Years of Experience</h3>
+					<p>With **over 2 years of experience in digital marketing**, our team has successfully optimized **multiple websites across industries**, delivering **consistent growth and higher ROI**.</p>
+		
+					<h3>✔️ 6. Affordable & Scalable SEO Packages</h3>
+					<p>We offer **cost-effective SEO solutions** for businesses of all sizes. Whether you’re a **startup, SME, or enterprise**, we provide flexible pricing plans that fit your budget.</p>
+		
+					<h3>✔️ 7. A Commitment to Long-Term Success</h3>
+					<p>Our focus is on **sustainable growth**. We don’t just optimize for quick wins; we create **long-term SEO strategies** that ensure your website maintains top rankings over time.</p>
+		
+					<p>🚀 Ready to take your website to the **top of Google?** Let’s build an SEO strategy that works for your business. <strong>Contact Yobyte today!</strong></p>
+				</div>
+			</div>
+		</div> -->
+		
+	</div>
+</section>
+
+<footer hidden class="section-sm bg-tertiary">
+	<div class="container">
+		<div class="row justify-content-between">
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Service</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="social-media-marketing.html">Social Media Marketing</a>
+						</li>
+						<li class="mb-2"><a href="seo.html">SEO optimisation and Content Marketing</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Student Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Mortgage Loans</a>
+						</li>
+						<li class="mb-2"><a href="service-details.html">Payday Loans</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">About</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="#!">Benefits</a>
+						</li>
+						<li class="mb-2"><a href="#!">Careers</a>
+						</li>
+						<li class="mb-2"><a href="#!">Our Story</a>
+						</li>
+						<li class="mb-2"><a href="#!">Team</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-2 col-md-4 col-6 mb-4">
+				<div class="footer-widget">
+					<h5 class="mb-4 text-primary font-secondary">Help</h5>
+					<ul class="list-unstyled">
+						<li class="mb-2"><a href="contact.html">Contact Us</a>
+						</li>
+						<li class="mb-2"><a href="faq.html">FAQs</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="col-lg-4 col-md-12 newsletter-form">
+				<div style="background-color: #F4F4F4; padding: 35px;">
+					<h5 class="mb-4 text-primary font-secondary">Subscribe</h5>
+					<div class="pe-0 pe-xl-5">
+						<form action="#!" method="post" name="mc-embedded-subscribe-form" target="_blank">
+							<div class="input-group mb-3">
+								<input type="text" class="form-control shadow-none bg-white border-end-0" placeholder="Email address"> <span class="input-group-text border-0 p-0">
+                    <button class="input-group-text border-0 bg-primary" type="submit" name="subscribe"
+                      aria-label="Subscribe for Newsletter"><i class="fas fa-arrow-right"></i></button>
+                  </span>
+							</div>
+							<div style="position: absolute; left: -5000px;" aria-hidden="true">
+								<input type="text" name="b_463ee871f45d2d93748e77cad_a0a2c6d074" tabindex="-1">
+							</div>
+						</form>
+					</div>
+					<p class="mb-0">Lorem ipsum dolor sit amet, rdghds consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat</p>
+				</div>
+			</div>
+		</div>
+		<div class="row align-items-center mt-5 text-center text-md-start">
+			<div class="col-lg-4">
+        <a href="index.html">
+          <img loading="prelaod" decoding="async" class="img-fluid" width="160" src="images/logo.png" alt="Wallet">
+        </a>
+			</div>
+			<div class="col-lg-4 col-md-6 mt-4 mt-lg-0">
+				<ul class="list-unstyled list-inline mb-0 text-lg-center">
+					<li class="list-inline-item me-4"><a class="text-black" href="privacy-policy.html">Privacy Policy</a>
+					</li>
+					<li class="list-inline-item me-4"><a class="text-black" href="terms.html">Terms &amp; Conditions</a>
+					</li>
+				</ul>
+			</div>
+			<div class="col-lg-4 col-md-6 text-md-end mt-4 mt-md-0">
+				<ul class="list-unstyled list-inline mb-0 social-icons">
+					<li class="list-inline-item me-3"><a title="Explorer Facebook Profile" class="text-black" href="https://facebook.com/"><i class="fab fa-facebook-f"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Twitter Profile" class="text-black" href="https://twitter.com/"><i class="fab fa-twitter"></i></a>
+					</li>
+					<li class="list-inline-item me-3"><a title="Explorer Instagram Profile" class="text-black" href="https://instagram.com/"><i class="fab fa-instagram"></i></a>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</footer>
+
+
+<!-- # JS Plugins -->
+<script src="plugins/jquery/jquery.min.js"></script>
+<script src="plugins/bootstrap/bootstrap.min.js"></script>
+<script src="plugins/slick/slick.min.js"></script>
+<script src="plugins/scrollmenu/scrollmenu.min.js"></script>
+
+<!-- Main Script -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
